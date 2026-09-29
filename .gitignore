@@ -1,0 +1,50 @@
+.gradle/
+.cxx/
+**/build/
+local.properties
+evidence/
+*.log
+
+# Generated builds and tool caches (including milestone-specific suffixes).
+build-*/
+.gradle-*/
+gradle-home/
+tool-home/
+tmp/
+__pycache__/
+*.pyc
+*.apk
+*.aab
+*.so
+*.dll
+*.exe
+*.o
+*.obj
+*.a
+*.lib
+*.map
+
+# Original game data and personal pilot files are never repository inputs.
+[Gg]ame[Dd]ata/
+*.plt
+*.PLT
+*.bak
+*.BAK
+vr_stereo.corrupt-before-recovery.*.bin
+vr_stereo.recovery-candidate.*.bin
+*.opt
+*.OPT
+
+# Local credentials and signing material.
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+
+# Keep checked-in shader inputs and Gradle wrapper JARs eligible.
+# Do not blanket-ignore *.spv, *.h or *.jar.

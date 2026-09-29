@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- M7C: OpenXR support (optional — falls back to flat panel if unavailable) -->
+    <uses-feature android:name="android.software.openxr" android:required="false" />
+    <uses-feature android:glEsVersion="0x00030000" android:required="true" />
+    <application android:label="XWAQuest M7C XR Panel" android:allowBackup="false"
+        android:theme="@android:style/Theme.Material.NoActionBar.Fullscreen"
+        android:hardwareAccelerated="true">
+        <activity android:name=".RuntimeActivity" android:exported="true"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

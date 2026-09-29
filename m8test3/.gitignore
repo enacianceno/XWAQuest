@@ -1,0 +1,7 @@
+/build-android/
+/app/build/
+/.gradle/
+/gradle-home/
+/tool-home/
+/tmp/
+/local.properties

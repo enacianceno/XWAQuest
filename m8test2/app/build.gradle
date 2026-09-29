@@ -1,0 +1,21 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'org.openxwa.xwaquest.m8test2'
+    compileSdk 35
+    buildToolsVersion '33.0.1'
+    ndkVersion '28.2.13676358'
+    defaultConfig {
+        applicationId 'org.openxwa.xwaquest.m8test2'
+        minSdk 29
+        targetSdk 34
+        versionCode 3
+        versionName '0.8.2-test2'
+        ndk { abiFilters 'arm64-v8a' }
+    }
+    packagingOptions { jniLibs { useLegacyPackaging true } }
+    sourceSets.main.jniLibs.srcDir layout.buildDirectory.dir('generated/engineJni')
+    sourceSets.main.java.srcDir "${rootProject.projectDir}/../../third_party/SDL3/android-project/app/src/main/java"
+    sourceSets.main.assets.srcDir "${rootProject.projectDir}/../m2/app/build/generated/engineAssets"
+    buildTypes { debug { debuggable true } }
+}
+

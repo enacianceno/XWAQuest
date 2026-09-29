@@ -1,0 +1,25 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'org.openxwa.xwaquest.m7c'
+    compileSdk 35
+    buildToolsVersion '33.0.1'
+    ndkVersion '28.2.13676358'
+    defaultConfig {
+        applicationId 'org.openxwa.xwaquest.m7c'
+        minSdk 29
+        targetSdk 34
+        versionCode 1
+        versionName '0.8-M7C-xr-panel'
+        ndk { abiFilters 'arm64-v8a' }
+    }
+    packagingOptions { jniLibs { useLegacyPackaging true } }
+    sourceSets.main.jniLibs.srcDir layout.buildDirectory.dir('generated/engineJni')
+    sourceSets.main.java.srcDir "${rootProject.projectDir}/../../third_party/SDL3/android-project/app/src/main/java"
+    sourceSets.main.assets.srcDir "${rootProject.projectDir}/../m2/app/build/generated/engineAssets"
+    buildTypes { debug { debuggable true } }
+}
+// Native build: pwsh not available in all environments. Build manually:
+//   cd m7 && pwsh -NoProfile -File Build-Target.ps1
+// Then run: gradlew -p m7 assembleDebug
+tasks.register('buildM7Native') { enabled = false }
+tasks.named('preBuild').configure { /* dependsOn buildM7Native -- built manually */ }

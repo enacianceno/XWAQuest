@@ -1,0 +1,9 @@
+/build*/
+/host/
+/deps/
+/downloads/
+/prefix/
+/evidence/
+/.gradle/
+/app/build/
+/app/.cxx/

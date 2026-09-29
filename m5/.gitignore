@@ -1,0 +1,8 @@
+/build*/
+/evidence/
+/.gradle/
+/app/build/
+/local.properties
+
+/staging/
+
