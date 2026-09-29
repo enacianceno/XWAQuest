@@ -15,6 +15,22 @@ build/provisioning scripts, tests and project notes.
   libraries. This repository alone is not yet a reproducible build backup.
 - Build results and runtime logs do not replace visual validation in the headset.
 
+## Apoya el desarrollo / Support development
+
+[☕ Apoyar XWAQuest mediante Mercado Pago](https://link.mercadopago.com.mx/xwaquest)
+
+Las aportaciones son voluntarias y ayudan a cubrir herramientas de programación
+e IA, pruebas y otros gastos de desarrollo. No compran el juego, sus archivos
+ni contenido de terceros, y no garantizan funciones o fechas de entrega.
+XWAQuest es un proyecto experimental e independiente, sin afiliación ni respaldo
+oficial de los titulares del juego.
+
+Voluntary contributions help cover programming and AI tools, testing and other
+development expenses. They do not purchase the game, game assets or third-party
+content, and do not guarantee features or delivery dates. XWAQuest is an
+independent experimental project with no official affiliation or endorsement
+from the game's rights holders.
+
 The original M1 instructions are retained below as milestone documentation.
 
 ## XWAQuest M1
