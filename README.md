@@ -1,5 +1,9 @@
 # XWAQuest
 
+![XWAQuest promotional cover](docs/images/xwaquest-cover.png)
+
+*AI-generated promotional illustration — not an in-game screenshot or a representation of current graphics quality.*
+
 Experimental standalone Meta Quest port of X-Wing Alliance using OpenXWA,
 SDL GPU/Vulkan and OpenXR. This repository preserves development milestones,
 build/provisioning scripts, tests and project notes.
