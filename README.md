@@ -15,6 +15,13 @@ build/provisioning scripts, tests and project notes.
   libraries. This repository alone is not yet a reproducible build backup.
 - Build results and runtime logs do not replace visual validation in the headset.
 
+## Development video
+
+[Watch or download the XWAQuest progress video — October 8, 2026](docs/media/xwaquest-progress-2026-10-08-160943.mp4).
+
+User-provided recording, preserved from the original WhatsApp video. This clip
+documents development progress; it does not establish validation of every feature.
+
 ## Apoya el desarrollo / Support development
 
 [☕ Apoyar XWAQuest mediante Mercado Pago](https://link.mercadopago.com.mx/xwaquest)
